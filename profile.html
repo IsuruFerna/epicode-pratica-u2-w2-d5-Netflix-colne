@@ -35,11 +35,18 @@
                   <h1 class="display-3 border-bottom mt-5">Edit Profile</h1>
                   <div class="row row-cols-1 row-cols-lg-2 mt-4 border-bottom">
                      <div class="col col-lg-4 mb-3">
-                        <img
-                           class="img-thumbnail"
-                           src="./assets/avatar.png"
-                           alt="profile picture"
-                        />
+                        <div class="position-relative">
+                           <img
+                              class="img-thumbnail"
+                              src="./assets/avatar.png"
+                              alt="profile picture"
+                           />
+                           <span
+                              class="position-absolute bottom-0 start-0 translate-middle p-3 bg-dark ms-4 border border-light rounded-circle"
+                           >
+                              <span class="visually-hidden"></span>
+                           </span>
+                        </div>
                      </div>
                      <div class="col col-lg-8">
                         <div class="border-bottom pb-3 pe-3">
@@ -74,6 +81,16 @@
                                  </li>
                               </ul>
                            </div>
+
+                           <!-- <select
+                              class="form-select btn-outline-light rounded-0 border border-white"
+                              aria-label="Default select example"
+                           >
+                              <option selected>English</option>
+                              <option value="1">Italian</option>
+                              <option value="2">Spanish</option>
+                              <option value="3">Russian</option>
+                           </select> -->
                         </div>
                         <div
                            class="border-bottom pb-3 mt-4 pe-3 d-flex flex-column align-items-start"
@@ -111,7 +128,8 @@
                                  class="form-check-label"
                                  for="flexCheckDefault"
                               >
-                                 Default checkbox
+                                 Autoplay next episode in a series on all
+                                 devices.
                               </label>
                            </div>
                            <div class="form-check">
@@ -126,7 +144,8 @@
                                  class="form-check-label"
                                  for="flexCheckChecked"
                               >
-                                 Checked checkbox
+                                 Autoplay previews while browsing on all
+                                 devices.
                               </label>
                            </div>
                         </div>
